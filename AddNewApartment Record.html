@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="site.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <title>My Hotel</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-container">
+            <div class="nav">
+                <h3 class="logo">Hotel</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="AddNewApartment Record.html">Reservation</a></li>
+                    <li><a href="#contactus">Contact us</a></li>
+                    <li><a href="AddFeedback.html">feeddback</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="Add">
+            <h1>Reserve your room</h1>
+            <div class="form">
+                <form action="" method="post" onsubmit=" return validate()">
+                    <div class="item"> <label>
+                            <div class="lbl"> Apartment_Number:
+                                <span class="error" id="errApartment"> </span>
+                            </div> <input id="Apartment" class="inputBox" type="text" name="Apartment"
+                                placeholder="Enter your name..." />
+                        </label>
+                    </div>
+
+
+                    <div> <label>
+                            <div> Floor Number:
+                                <span class="error" id="errFloor"> </span>
+                            </div>
+                            <select id="Floor" class="inputBox" name="Floor">
+                                <option>Please select Number floor...</option>
+                                <option> 1 </option>
+                                <option> 2 </option>
+                                <option> 3 </option>
+                                <option> 4 </option>
+                                <option> 5 </option>
+                                <option> 6 </option>
+                            </select>
+                        </label>
+                    </div>
+
+
+                    <div class="item"> <label>
+                            <div class="lbl"> Number Of Rooms:
+                                <span class="error" id="errRoom"> </span>
+                            </div> <input id="Room" class="inputBox" type="text" name="Room"
+                                placeholder="Enter your name..." />
+                        </label>
+                    </div>
+
+                    <div class="item"> <label>
+                            <div class="lbl"> occupied:
+                                <span class="error" id="errOccupied"> </span>
+                            </div> <input id="occupied" class="inputBox" type="text" name="occupied"
+                                placeholder="Enter your name..." />
+                        </label>
+                    </div>
+
+                    <div class="item"> <label>
+                            <div class="lbl"> Price:
+                                <span class="error" id="errPrice"> </span>
+                            </div> <input id="Price" class="inputBox" type="text" name="Price"
+                                placeholder="Enter your name..." />
+                        </label>
+                    </div>
+
+                    <div class="item"> <label>
+                            <div class="lbl"> Payment:
+                                <span class="error" id="errPayment"> </span>
+                            </div> <input id="Payment" class="inputBox" type="text" name="Payment"
+                                placeholder="Enter your name..." />
+                        </label>
+                    </div>
+
+                    <div class="item"> <label>
+                            <div class="lbl"> Rent Start Date:
+                                <span class="error" id="errRentStartDate"> </span>
+                            </div> <input id="RentStartDate" class="inputBox" type="date" name="RentStartDate" />
+                        </label>
+                    </div>
+
+                    <div class="item"> <label>
+                            <div class="lbl"> Rent End Date:
+                                <span class="error" id="errRentEndDate"> </span>
+                            </div> <input id="RentEndDate" class="inputBox" type="date" name="RentEndDate" />
+                        </label>
+                    </div>
+
+                    <div class="item"> <label>
+                            <div class="lbl"> Renter National ID:
+                                <span class="error" id="errRenterNationalID"> </span>
+                            </div> <input id="RenterNationalID" class="inputBox" type="text" name="RenterNationalID"
+                                placeholder="Please enter the national number of the tenant" />
+                        </label>
+                    </div>
+
+                    <div class="item"> <label>
+                            <div class="lbl"> Renter Name:
+                                <span class="error" id="errRenterName"> </span>
+                            </div> <input id="RenterName" class="inputBox" type="text" name="RenterName"
+                                placeholder="Please enter the Renter Name" />
+                        </label>
+                    </div>
+                    <div  class="btnn">
+                        <input type="submit">
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+        <footer>
+            <p>تخلي؟
+
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="site.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <title>My Hotel</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-container">
+            <div class="nav">
+                <h3 class="logo">Hotel</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="AddNewApartment Record.html">Reservation</a></li>
+                    <li><a href="#contactus">Contact us</a></li>
+                    <li><a href="AddFeedback.html">feeddback</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="Add">
+            <h1>Reserve your room</h1>
+            <div class="form">
+                <form action="" method="post" onsubmit=" return validatefeedback()">
+                    <div>
+                        <label for="">
+                            Name: <span class="error" id="errname"></span>
+                            <input type="text" placeholder="Enter you are name" name="name" id="name">
+                        </label>
+                    </div>
+
+                    <div>
+                        <label for="">
+                            Phone <span class="error" id="errphone"></span>
+                            <input type="text" name="phone" id="phone" placeholder="Enter you are Number Phone">
+
+                        </label>
+                    </div>
+                    <div>
+                        <label for="">
+                            Email <span class="error" id="erremail"></span>
+                            <input id="email" name="email" type="text" placeholder="Enter you are email">
+                        </label>
+                    </div>
+
+                    <div>
+                        <label for="">
+                            Subject <span class="error" id="errsubject"></span>
+                            <input name="Subject" id="Subject" type="text" placeholder="Enter you are Subject">
+                        </label>
+                    </div>
+
+                    <div>
+                        <label for="">
+                            <div>
+                            Type <span class="error" id="errtype"></span>
+                        </div>
+                            <select name="type" id="Type">
+
+                                <option> Please select your type... </option>
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                            </select>
+                        </label>
+                    </div>
+
+
+                    <label for="">
+                        Message: <span class="error" id="errmesage"></span>
+
+                        <textarea class="message" name="message" id="message" placeholder="Enter feedback here"></textarea>
+
+                    </label>
+                    <input type="submit">
+
+                    
+
+
+
+                </form>
+
+            </div>
+
+        </div>
+
+        <footer>
+            <p>تخلي؟
+
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>
